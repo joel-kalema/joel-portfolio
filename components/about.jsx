@@ -1,20 +1,37 @@
-import Link from 'next/link';
+"use client"
+
 import Image from 'next/image';
 import React from 'react'
+import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 
 const About = () => {
-
     return (
-        <div className='py-40 px-20 flex justify-between items-center gap-10'>
-            <h1 className='text-7xl w-2/6'>ABOUT ME</h1>
-            <div className="relative h-[40rem] overflow-hidden w-2/6 transition duration-300">
-                <Image src="/joel.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} className='' />
+        <ParallaxProvider>
+            <div className="pb-40 px-20 flex justify-between items-center gap-10">
+                <div className="text-7xl w-2/6">
+                    <Parallax speed={-10}>
+                        <h1>ABOUT ME</h1>
+                    </Parallax>
+                </div>
+                <div className="relative h-[40rem] w-2/6 overflow-hidden transition duration-300">
+                    <Parallax speed={10}>
+                        <div className="relative h-[40rem] w-full overflow-hidden transition duration-300 mage">
+                            <Image src="/joel.jpg" layout="fill" objectFit="cover" alt="Portrait of Joel Kalema" quality={100} />
+                        </div>
+                    </Parallax>
+                </div>
+
+                <div className="w-2/6">
+                    <Parallax speed={-15}>
+                        <p className="text-[#8f8f8f] font-light">
+                            I am Joel Kalema, a Software Developer with a user-centric approach and over 3 years of remote experience working with fast-growing U.S.-based startups. My strong problem-solving skills enable me to analyze complex issues and identify the most effective solutions.
+                        </p>
+                        <p className="mt-10 border-b pb-2 inline-block cursor-pointer">Hire me</p>
+                    </Parallax>
+                </div>
             </div>
-            <div className='w-2/6'>
-                <p className='text-[#8f8f8f] font-light'>I am Joel Kalema, a Software Developer with a user-centric approach and have more than 3 years of remote work experience within fast growing us-based startups. My strong problem-solving skills allow me to analyze complex problems and identify the most effective solution.</p>
-                <p className='mt-10 border-b pb-2 inline-block'>Hire me</p>
-            </div>
-        </div>
+        </ParallaxProvider>
+
     )
 }
 
