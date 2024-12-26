@@ -5,13 +5,11 @@ import { motion } from "framer-motion";
 const DURATION = 0.25;
 const STAGGER = 0.025;
 
-
-export const FlippingText = ({ children, href }) => {
-    return (
-        <motion.a
+export const FlippingText = ({ children }) => {
+   return (
+        <motion.div
             initial="initial"
             whileHover="hovered"
-            href={href}
             className="relative block overflow-hidden whitespace-nowrap"
             style={{
                 lineHeight: 0.75,
@@ -63,6 +61,6 @@ export const FlippingText = ({ children, href }) => {
                     </motion.span>
                 ))}
             </div>
-        </motion.a>
+        </motion.div>
     );
 };

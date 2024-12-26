@@ -4,7 +4,7 @@ import { DiPostgresql, DiReact, DiRubyRough } from 'react-icons/di';
 import { SiRubyonrails, SiNodedotjs, SiPrisma } from 'react-icons/si';
 import { BsFillCCircleFill } from "react-icons/bs";
 import { BiLogoMongodb } from "react-icons/bi";
-import { FaVuejs, FaPhp } from "react-icons/fa";
+import { FaVuejs, FaPhp, FaJava } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si"
 
 
@@ -22,7 +22,7 @@ export const frontend = [
         icons: <FaVuejs />
     },
     {
-        langages: 'React Netive',
+        langages: 'Native',
         icons: <TbBrandReact />
     },
     {
@@ -97,13 +97,25 @@ export const langages = [
     {
         langages: 'C',
         icons: <BsFillCCircleFill />
+    },
+    {
+        langages: 'Java',
+        icons: <FaJava />
+    },
+    {
+        langages: 'Js',
+        icons: <TbBrandJavascript />
+    },
+    {
+        langages: 'Typescript',
+        icons: <SiTypescript />
+    },
+    {
+        langages: 'C',
+        icons: <BsFillCCircleFill />
     }
 ]
 
-    // "next": "15.0.2",
-    // "react": "19.0.0-rc-02c0e824-20241028",
-    // "react-dom": "19.0.0-rc-02c0e824-20241028",
-    // "react-icons": "^5.3.0",
 
 
 

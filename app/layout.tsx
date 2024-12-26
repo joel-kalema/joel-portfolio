@@ -1,13 +1,6 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import TopBar from '@/components/topbar';
-import { Poppins } from "next/font/google";
-
-const font = Poppins({
-  subsets: ['latin', 'latin-ext'],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,9 +14,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          href="https://api.fontshare.com/v2/css?f[]=clash-display@300,400,500,600,700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body
         suppressHydrationWarning={true}
-        className={`${font.className} antialiased`}
+        className="antialiased font-clash"
       >
         <TopBar />
         {children}
