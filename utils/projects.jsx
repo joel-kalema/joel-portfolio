@@ -96,11 +96,3 @@ export const projects = [
     //     state: 'public'
     // }
 ];
-
-const getProject = (name) => {
-    const formattedName = name.split('_').join(' ');
-    const project = projects.find(project => project.title === formattedName);
-    return project;
-};
-
-export default getProject;
