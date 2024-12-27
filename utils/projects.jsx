@@ -2,6 +2,7 @@ export const projects = [
     {
         id: 1,
         image: '/images/qavah.png',
+        images: ['/images/qavah1.png', '/images/qavah2.png', '/images/qavah3.png', '/images/qavah4.png'],
         title: 'QAVAH GROUPE',
         overview: "A responsive e-commerce website designed to facilitate property browsing and product discovery. Built to meet a strict 3-day deadline, it offers seamless navigation and a user-friendly interface.",
         features: [
@@ -23,6 +24,7 @@ export const projects = [
     {
         id: 2,
         image: '/images/hop.png',
+        images: [],
         title: 'HopStair App',
         overview: "HopStair is a personal growth platform combining science-backed tools, exercises, and community support to foster introspection and personal development.",
         features: [
@@ -44,6 +46,7 @@ export const projects = [
     {
         id: 3,
         image: '/images/beleke.png',
+        images: ['/images/beleke1.png', '/images/beleke2.png', '/images/beleke3.png', '/images/beleke4.png'],
         title: 'CBT MINISTRIES',
         overview: "Official website for CBT Ministries, offering a platform to share their mission, services, and events with their audience.",
         features: [
@@ -65,6 +68,7 @@ export const projects = [
     {
         id: 4,
         image: '/images/updev.png',
+        images: ['/images/updev.png', '/images/updev2.png', '/images/updev3.png', '/images/updev4.png'],
         title: 'UpDev',
         overview: "UpDev is a social media platform designed specifically for developers, offering tools and resources to learn, collaborate, and share projects.",
         features: [
@@ -87,6 +91,7 @@ export const projects = [
     {
         id: 5,
         image: '/images/eleka.png',
+        images: ['/images/eleka.png', '/images/eleka2.png', '/images/eleka3.png', '/images/eleka4.png'],
         title: 'Eleka',
         overview: "Eleka is an innovative EdTech platform leveraging AI to provide personalized career guidance and actionable roadmaps for growth.",
         features: [
@@ -108,6 +113,7 @@ export const projects = [
     {
         id: 6,
         image: '/images/neutral.png',
+        images: ['/images/neutral.png', '/images/neutral2.png', '/images/neutral3.png', '/images/neutral4.png'],
         title: 'Neutral',
         overview: "Neutral is a digital agency platform offering software development services to businesses, specializing in mobile and web applications.",
         features: [
