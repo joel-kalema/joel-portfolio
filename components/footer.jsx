@@ -5,7 +5,7 @@ import React from 'react';
 const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
-        <div className='relative overflow-hidden'>
+        <div className='relative overflow-hidden border-t'>
             <h1 className='text-[3rem] lg:text-[14rem] text-center font-semibold mb-2 text-border '>joel  kalema</h1>
             <div className='border-t px-2 lg:px-16 py-4 flex flex-col-reverse items-center justify-center lg:justify-between text-[#575757]'>
                 <div

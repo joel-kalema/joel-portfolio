@@ -36,13 +36,14 @@ const Projects = () => {
                 </div>
             </ParallaxProvider>
 
-            <div className="mt-40 lg:flex flex-wrap">
+            <div className="mt-40 lg:flex flex-wrap text-[#FFFFE3]">
                 {projects.map((project) => (
                     <div
-                        key={project.title}
-                        className="lg:w-1/2 p-6 grayscale hover:grayscale-0 transition duration-300"
-                    >
-                        <div className="relative h-[16rem] lg:h-[33rem] overflow-hidden w-5/6 mx-auto">
+                    key={project.title}
+                    className="lg:w-1/2 relative overflow-hidden grayscale hover:grayscale-0 transition duration-300 border border-dotted border-[#2a2a26] group"
+                >
+                    <div className="p-4 h-[20rem] overflow-hidden relative z-20">
+                        <div className="relative float-right h-[16rem] lg:h-[18rem] w-full">
                             <Image
                                 src={project.image}
                                 layout="fill"
@@ -51,17 +52,21 @@ const Projects = () => {
                                 quality={100}
                             />
                         </div>
-                        <div>
-                            <h1 className="text-xl mb-2 font-extrabold">{project.title}</h1>
-                            <p className='text-sm lg:w-5/6 mb-10 font-light text-[#8f8f8f]'>{project.details.substring(0, 190)}...</p>
-                            <p
-                                onClick={() => handleRedirect(project)}
-                                className="border flex items-center justify-between py-1 px-4 rounded-3xl w-3/6 lg:w-1/6 cursor-pointer"
-                            >
-                                More <LuMoveRight />
-                            </p>
-                        </div>
                     </div>
+                    <div className="w-[30rem] absolute top-0 h-[30rem] opacity-0 group-hover:opacity-10 transition duration-500 z-10 bg-[#FFFFE3] blur-3xl rounded-full"></div>
+                    <div className="p-10 relative z-20">
+                        <h1 className="text-2xl mb-2 font-extrabold">{project.title}</h1>
+                        <p className="text-sm lg:w-5/6 mb-10 text-[#8f8f8f]">
+                            {project.details.substring(0, 190)}...
+                        </p>
+                        <p
+                            onClick={() => handleRedirect(project)}
+                            className="border flex items-center justify-between py-1 px-4 rounded-3xl w-3/6 lg:w-1/6 cursor-pointer"
+                        >
+                            More <LuMoveRight />
+                        </p>
+                    </div>
+                </div>
                 ))}
             </div>
         </div>

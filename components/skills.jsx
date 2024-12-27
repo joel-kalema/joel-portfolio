@@ -17,7 +17,7 @@ const Slider = ({ items, width, height }) => (
         <div
           style={{ "--position": index + 1 }}
           key={item.langages || index}
-          className="flex items-center text-2xl cursor-pointer gap-1 font-light item"
+          className="flex items-center text-2xl cursor-pointer gap-1 font-semibold item"
         >
           <span className="text-md">{item.icons}</span>
           {item.langages}
