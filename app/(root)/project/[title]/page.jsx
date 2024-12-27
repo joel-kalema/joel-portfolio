@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const ProjectDetails = ({ params }) => {
-  const { title } = params; // Capture the dynamic title from the route
+  const { title } = params;
   const project = projects.find(
     (p) => p.title.split(" ").join("_") === title
   );
@@ -14,15 +14,12 @@ const ProjectDetails = ({ params }) => {
   }
 
   return (
-    <div className="px-20 py-40 overflow-hidden">
-      {/* Project Title */}
-      <h1 className="text-6xl text-center font-bold">{project.title}</h1>
-
-      {/* Project Overview */}
-      <p className="mt-10 text-xl">{project.overview}</p>
-
-      {/* Project Image */}
-      <div className="mt-10 w-5/6 mx-auto relative z-20">
+    <div className="px-4 py-40 overflow-hidden">
+      <div className="flex justify-between gap-10 w-5/6 mx-auto">
+        <h1 className="text-6xl font-bold w-1/2">{project.title}</h1>
+        <p className="text-xl w-1/2">{project.overview}</p>
+      </div>
+      <div className="mt-16 w-5/6 mx-auto relative z-20">
         <Image
           src={project.image}
           width={1200}
@@ -33,10 +30,8 @@ const ProjectDetails = ({ params }) => {
       </div>
       <div className="w-[50rem] absolute top-52 -ml-40 top h-[50rem] opacity-10 transition duration-500 z-10 bg-[#FFFFE3] blur-3xl rounded-full"></div>
 
-      {/* Project Details Section */}
       <div className="mt-28 w-5/6 mx-auto">
         <div className="mb-16">
-          {/* Features */}
           <h2 className="font-semibold text-2xl mb-5">Features</h2>
           <ul className="list-disc pl-10">
             {project.features.map((feature, index) => (
@@ -45,7 +40,6 @@ const ProjectDetails = ({ params }) => {
           </ul>
         </div>
 
-        {/* Contributions and Impact */}
         <div className="flex flex-col gap-16">
           <div>
             <h2 className="font-semibold text-2xl mb-5">My Contributions</h2>
@@ -61,13 +55,11 @@ const ProjectDetails = ({ params }) => {
           </div>
         </div>
 
-        {/* Outcome */}
         <div className="mt-10">
           <h2 className="font-semibold text-2xl mb-5">Outcome</h2>
           <p className="text-lg">{project.outcome}</p>
         </div>
 
-        {/* Live Link */}
         <div className="mt-16 flex items-center justify-center">
           <Link
             href={project.live}
@@ -78,7 +70,6 @@ const ProjectDetails = ({ params }) => {
           </Link>
         </div>
 
-        {/* Technologies */}
         <div className="mt-16">
           <h2 className="font-semibold text-2xl mb-5">Technologies Used</h2>
           <div className="flex flex-wrap items-center gap-5">
