@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import TopBar from '@/components/topbar';
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,7 +23,6 @@ export default function RootLayout({
         suppressHydrationWarning={true}
         className="antialiased font-clash"
       >
-        <TopBar />
         {children}
       </body>
     </html>

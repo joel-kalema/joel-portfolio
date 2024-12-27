@@ -57,7 +57,7 @@ const Projects = () => {
                     <div className="p-10 relative z-20">
                         <h1 className="text-2xl mb-2 font-extrabold">{project.title}</h1>
                         <p className="text-sm lg:w-5/6 mb-10 text-[#8f8f8f]">
-                            {project.details.substring(0, 190)}...
+                            {project.overview.substring(0, 190)}...
                         </p>
                         <p
                             onClick={() => handleRedirect(project)}
