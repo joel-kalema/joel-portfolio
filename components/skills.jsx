@@ -29,7 +29,7 @@ const Slider = ({ items, width, height }) => (
 
 const Skills = () => {
   return (
-    <div className="pb-20 px-4 lg:w-4/6 mx-auto mb-40" id="skills">
+    <div className="pb-20 pt-20 lg:pt-0 px-4 lg:w-4/6 mx-auto mb-40" id="skills">
       <div className="flex">
         <h1 className="text-5xl lg:text-8xl text-center font-semibold mb-28">
           Technical Proficiencies

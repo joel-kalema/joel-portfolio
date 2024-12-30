@@ -9,7 +9,7 @@ import Skills from "./skills";
 
 const About = () => {
     return (
-        <div className='py-20' id='about'>
+        <div className='py-40 lg:py-20' id='about'>
             <ParallaxProvider>
                 <div className="pb-40 px-4 lg:px-20 lg:flex justify-between items-center gap-10">
                     <div className="text-6xl text-center lg:text-start lg:text-7xl lg:w-2/6 font-semibold">
