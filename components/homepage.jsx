@@ -11,7 +11,7 @@ const HomePage = () => {
         <ParallaxProvider>
             <div className='py-20 lg:py-40 px-4 lg:px-20 relative overflow-hidden'>
                 <div className="absolute h-full overflow-hidden w-full top-0 right-0 opacity-20 animate-pulse transition duration-300 z-10">
-                    <Image src="/bg.png" layout="fill" objectFit="cover" alt="bay" quality={100} className='' />
+                    <Image src="/bg.png" layout="fill" objectFit="cover" alt="bay" quality={50} />
                 </div>
                 <div className='relative z-20'>
                     <Parallax speed={-18}>

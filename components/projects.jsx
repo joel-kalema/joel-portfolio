@@ -49,7 +49,7 @@ const Projects = () => {
                                 layout="fill"
                                 objectFit="cover"
                                 alt={project.title}
-                                quality={100}
+                                quality={20}
                             />
                         </div>
                     </div>
