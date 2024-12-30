@@ -15,7 +15,7 @@ const HomePage = () => {
                 </div>
                 <div className='relative z-20'>
                     <Parallax speed={-18}>
-                        <p className='text-2xl'>I'm Joel kalema</p>
+                        <p className='text-2xl'>I&apos;m Joel kalema</p>
                         <h1 className='text-5xl lg:text-8xl mb-80 lg:mb-40 font-semibold'>Software</h1>
                     </Parallax>
                     <div className='flex justify-end  gap-3'>
@@ -23,7 +23,7 @@ const HomePage = () => {
                         <h1 className='text-5xl lg:text-8xl text-right mb-28 font-semibold'>Developer</h1>
                     </div>
                     <div className='lg:flex justify-between items-center'>
-                        <p className='lg:w-2/6 mb-4 lg:mb-0 text-[#8f8f8f]'>Let's make somthing new, different and more meanigful or make think more visual or Conceptual?</p>
+                        <p className='lg:w-2/6 mb-4 lg:mb-0 text-[#8f8f8f]'>Let&apos;s make somthing new, different and more meanigful or make think more visual or Conceptual?</p>
                         <Link href='#' className='text-[#8f8f8f] border py-2 px-6 rounded-3xl cursor-pointer'>Get in Touch!</Link>
                     </div>
                 </div>

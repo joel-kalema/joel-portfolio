@@ -17,12 +17,12 @@ const Contact = () => {
             <div className="lg:w-2/4 relative z-30 mb-40">
                 <ParallaxProvider>
                     <div className='text-7xl lg:text-9xl italic font-semibold text-[#575757] cursor-pointer flex flex-col mb-4 lg:mb-0'>
-                        <Parallax speed={-8}><h1 className="">Let's<br /></h1></Parallax>
+                        <Parallax speed={-8}><h1 className="">Let&apos;s<br /></h1></Parallax>
                         <Parallax speed={-4}> <h1 className="ml-20">Get in</h1></Parallax>
                         <Parallax speed={0}><h1 className="">Touch!</h1></Parallax>
                     </div>
                 </ParallaxProvider>
-                <p className='w-5/6 text-[#8f8f8f] italic text-sm'>Let's make somthing new, different and more meanigful or make think more visual or Conceptual?</p>
+                <p className='w-5/6 text-[#8f8f8f] italic text-sm'>Let&apos;s make somthing new, different and more meanigful or make think more visual or Conceptual?</p>
             </div>
             <div className="lg:w-2/4 relative z-30">
                 <ParallaxProvider>

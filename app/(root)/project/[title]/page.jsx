@@ -32,7 +32,7 @@ const ProjectDetails = ({ params }) => {
         }}>
           <div className="list">
             {project.images.map((image, index) => (
-              <div className="item" style={{ "--position": index }}><Image src={image} width={700} height={400} quality={10} alt="image" className="mx-auto rounded-lg" /></div>
+              <div key={index} className="item" style={{ "--position": index }}><Image src={image} width={700} height={400} quality={10} alt="image" className="mx-auto rounded-lg" /></div>
             ))}
           </div>
         </div>
