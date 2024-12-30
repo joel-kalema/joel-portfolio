@@ -65,7 +65,7 @@ const Contact = () => {
     const handleLoading = () => setIsLoading(isLoading);
 
     return (
-        <div className="py-40 px-4 lg:px-20 lg:flex relative overflow-hidden">
+        <div className="py-40 px-4 lg:px-20 lg:flex relative overflow-hidden" id="contact">
             <div className="absolute h-full overflow-hidden w-full top-0 right-0 opacity-20 z-10">
                 <Image
                     src="/contact.jpg"

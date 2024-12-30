@@ -22,11 +22,11 @@ const ProjectDetails = ({ params }) => {
       <div className="lg:flex justify-between mt-10 gap-10 lg:w-5/6 mx-auto">
         <h1 className="text-3xl mb-4 lg:text-6xl font-bold lg:w-1/2">{project.title}</h1>
         <div className="lg:w-1/2">
-          <p className="text-sm lg:text-xl">{project.overview}</p>
+          <p className="text-sm lg:text-xl mb-6">{project.overview}</p>
           <Link
             href={project.live}
             target="_blank"
-            className="text-[#FFFFE3] border border-[#FFFFE3] text-xl gap-5 px-6 py-2 rounded-3xl flex justify-center items-center shadow-md transition-transform duration-300"
+            className="text-[#FFFFE3] w-1/2  border border-[#FFFFE3] text-xl gap-5 px-6 py-2 rounded-3xl flex justify-center items-center shadow-md transition-transform duration-300"
           >
             See Live
             <LuArrowUpRight />

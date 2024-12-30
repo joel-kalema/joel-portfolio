@@ -1,7 +1,8 @@
 "use client";
 
-import Image from 'next/image';
 import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 import { LuMoveRight } from "react-icons/lu";
 import Skills from "./skills";
@@ -25,13 +26,13 @@ const About = () => {
 
                     <div className="lg:w-2/6">
                         <Parallax speed={-15}>
-                            <p className="text-[#c6c6c6] text-xl lg:text-md">
+                            <p className="text-[#FFFFE3] text-xl lg:text-md">
                                 I am Joel Kalema, a Software Developer with 3+ years of remote experience, focused on building user-centered solutions and solving complex challenges effectively. Passionate about creating impactful digital experiences.
                             </p>
-                            <div className="mt-10 border flex items-center justify-between w-3/6 py-3 px-6 rounded-3xl cursor-pointer">
+                            <Link href='#contact' className="mt-10 border flex items-center justify-between w-3/6 py-3 px-6 rounded-3xl cursor-pointer">
                                 Hire me
                                 <LuMoveRight />
-                            </div>
+                            </Link>
                         </Parallax>
                     </div>
                 </div>

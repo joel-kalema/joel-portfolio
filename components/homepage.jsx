@@ -24,7 +24,7 @@ const HomePage = () => {
                     </div>
                     <div className='lg:flex justify-between items-center'>
                         <p className='lg:w-2/6 mb-4 lg:mb-0 text-[#8f8f8f]'>Let&apos;s make somthing new, different and more meanigful or make think more visual or Conceptual?</p>
-                        <Link href='#' className='text-[#8f8f8f] border py-2 px-6 rounded-3xl cursor-pointer'>Get in Touch!</Link>
+                        <Link href='#contact' className='text-[#8f8f8f] border py-2 px-6 rounded-3xl cursor-pointer'>Get in Touch!</Link>
                     </div>
                 </div>
             </div>
