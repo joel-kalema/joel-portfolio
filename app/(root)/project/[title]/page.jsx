@@ -2,6 +2,7 @@ import { projects } from "@/utils/projects";
 import { LuArrowUpRight } from "react-icons/lu";
 import Image from "next/image";
 import Link from "next/link";
+import { IoReturnUpBack } from "react-icons/io5";
 
 const ProjectDetails = ({ params }) => {
   const { title } = params;
@@ -15,6 +16,9 @@ const ProjectDetails = ({ params }) => {
 
   return (
     <div className="px-6 py-10 lg:py-40 overflow-hidden">
+      <Link href='/#portfolio' className="fixed flex items-center gap-3 top-10 left-10">
+        <IoReturnUpBack /> Back
+      </Link>
       <div className="lg:flex justify-between gap-10 lg:w-5/6 mx-auto">
         <h1 className="text-3xl mb-4 lg:text-6xl font-bold lg:w-1/2">{project.title}</h1>
         <p className="text-sm lg:text-xl lg:w-1/2">{project.overview}</p>
@@ -28,7 +32,7 @@ const ProjectDetails = ({ params }) => {
         }}>
           <div className="list">
             {project.images.map((image, index) => (
-              <div className="item" style={{ "--position": index }}><Image src={image} width={700} height={400} alt="image" className="mx-auto rounded-lg" /></div>
+              <div className="item" style={{ "--position": index }}><Image src={image} width={700} height={400} quality={10} alt="image" className="mx-auto rounded-lg" /></div>
             ))}
           </div>
         </div>

@@ -36,7 +36,7 @@ const Projects = () => {
                 </div>
             </ParallaxProvider>
 
-            <div className="mt-40 lg:flex flex-wrap text-[#FFFFE3]">
+            <div className="mt-40 lg:flex flex-wrap text-[#FFFFE3]"  id="portfolio">
                 {projects.map((project) => (
                     <div
                     key={project.title}
