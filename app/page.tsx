@@ -2,7 +2,6 @@ import HomePage from '@/components/homepage'
 import About from "@/components/about";
 import Projects from '@/components/projects';
 import Contact from '@/components/contact';
-import Footer from '@/components/footer';
 // import TopBar from '@/components/topbar';
 
 export default function Home() {
@@ -13,7 +12,6 @@ export default function Home() {
       <About />
       <Projects />
       <Contact />
-      <Footer />
     </div>
   );
 }
