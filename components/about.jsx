@@ -2,14 +2,14 @@
 
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+import { Link } from "next-scroll";
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 import { LuMoveRight } from "react-icons/lu";
 import Skills from "./skills";
 
 const About = () => {
     return (
-        <div className='pt-20'>
+        <div className='py-20' id='about'>
             <ParallaxProvider>
                 <div className="pb-40 px-4 lg:px-20 lg:flex justify-between items-center gap-10">
                     <div className="text-6xl text-center lg:text-start lg:text-7xl lg:w-2/6 font-semibold">
@@ -29,7 +29,7 @@ const About = () => {
                             <p className="text-[#FFFFE3] text-xl lg:text-md">
                                 I am Joel Kalema, a Software Developer with 3+ years of remote experience, focused on building user-centered solutions and solving complex challenges effectively. Passionate about creating impactful digital experiences.
                             </p>
-                            <Link href='#contact' className="mt-10 border flex items-center justify-between w-3/6 py-3 px-6 rounded-3xl cursor-pointer">
+                            <Link to='contact' className="mt-10 border flex items-center justify-between w-3/6 py-3 px-6 rounded-3xl cursor-pointer" offset={100} duration={1000}>
                                 Hire me
                                 <LuMoveRight />
                             </Link>

@@ -1,12 +1,25 @@
 "use client";
 
 import React from 'react';
+import { Link } from "next-scroll";
+
+const links = [
+    { name: "ABOUT", idLink: "about" },
+    { name: "SKILLS", idLink: "skills" },
+    { name: "PROJECTS", idLink: "portfolio" },
+    { name: "CONTACTS", idLink: "contact" },
+  ];
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
         <div className='relative overflow-hidden border-t'>
             <h1 className='text-[3rem] lg:text-[14rem] text-center font-semibold mb-2 text-border '>joel  kalema</h1>
+            <div className='flex justify-between px-4 gap-3 mb-4 lg:mb-0 lg:w-5/6 mx-auto'>
+                    {links.map((link, index) => (
+                        <Link key={index} to={link.idLink} className="cursor-pointer" offset={100} duration={1000}>[ {link.name} ]</Link>
+                    ))}
+                </div>
             <div className='border-t px-2 lg:px-16 py-4 flex flex-col-reverse items-center justify-center lg:justify-between text-[#575757]'>
                 <div
                     variant="small"
@@ -14,12 +27,6 @@ const Footer = () => {
                 >
                     &copy; {currentYear} <sapn className="text-[#d3d1c8]">Joel Kalema</sapn>. All
                     Rights Reserved.
-                </div>
-                <div className='flex gap-3 mb-4 lg:mb-0'>
-                    <p>ABOUT</p>
-                    <p>PROJECTS</p>
-                    <p>SKILLS</p>
-                    <p>CONTACTS</p>
                 </div>
             </div>
         </div>
