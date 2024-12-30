@@ -16,10 +16,10 @@ const ProjectDetails = ({ params }) => {
 
   return (
     <div className="px-6 py-10 lg:py-40 overflow-hidden">
-      <Link href='/#portfolio' className="fixed flex items-center gap-3 top-10 left-10">
+      <Link href='/#portfolio' className="flex items-center gap-3">
         <IoReturnUpBack /> Back
       </Link>
-      <div className="lg:flex justify-between gap-10 lg:w-5/6 mx-auto">
+      <div className="lg:flex justify-between mt-10 gap-10 lg:w-5/6 mx-auto">
         <h1 className="text-3xl mb-4 lg:text-6xl font-bold lg:w-1/2">{project.title}</h1>
         <p className="text-sm lg:text-xl lg:w-1/2">{project.overview}</p>
       </div>
@@ -67,7 +67,7 @@ const ProjectDetails = ({ params }) => {
             <p className="text-md">{project.userImpact}</p>
           </div>
 
-          <div className="lg:w-1/2 bg-[#ffffe300]">
+          <div className="lg:w-1/2 bg-[#ffffe300] mt-10 lg:mt-0">
             <h2 className="font-semibold text-2xl mb-5">Outcome</h2>
             <p className="text-md">{project.outcome}</p>
           </div>
@@ -88,7 +88,7 @@ const ProjectDetails = ({ params }) => {
             </div>
           </div>
 
-          <div className="lg:mt-0 w-1/2 mt-16 lg:w-1/6 flex items-center justify-center">
+          <div className="lg:mt-0 w-1/2 mt-16 lg:w-1/6 flex items-center">
             <Link
               href={project.live}
               target="_blank"

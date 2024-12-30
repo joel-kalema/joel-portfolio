@@ -40,7 +40,7 @@ const Projects = () => {
                 {projects.map((project) => (
                     <div
                     key={project.title}
-                    className="lg:w-1/2 mb-4 lg:mb-0 relative overflow-hidden grayscale hover:grayscale-0 transition duration-300 border border-dotted border-[#2a2a26] group"
+                    className="lg:w-1/2 mb-12 lg:mb-0 relative overflow-hidden grayscale hover:grayscale-0 transition duration-300 border border-dotted border-[#2a2a26] group"
                 >
                     <div className="lg:p-4 h-[12rem] lg:h-[20rem] overflow-hidden relative z-20">
                         <div className="relative float-right h-[12rem] lg:h-[18rem] w-full">
