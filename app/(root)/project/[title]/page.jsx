@@ -15,13 +15,23 @@ const ProjectDetails = ({ params }) => {
   }
 
   return (
-    <div className="px-6 py-10 lg:py-40 overflow-hidden">
-      <Link href='/#portfolio' className="flex items-center gap-3">
+    <div className="px-6 py-10 lg:pb-40 overflow-hidden">
+      <Link href='/#portfolio' className="flex items-center mb-0 lg:mb-20 gap-3 lg:w-5/6 mx-auto">
         <IoReturnUpBack /> Back
       </Link>
       <div className="lg:flex justify-between mt-10 gap-10 lg:w-5/6 mx-auto">
         <h1 className="text-3xl mb-4 lg:text-6xl font-bold lg:w-1/2">{project.title}</h1>
-        <p className="text-sm lg:text-xl lg:w-1/2">{project.overview}</p>
+        <div className="lg:w-1/2">
+          <p className="text-sm lg:text-xl">{project.overview}</p>
+          <Link
+            href={project.live}
+            target="_blank"
+            className="text-[#FFFFE3] border border-[#FFFFE3] text-xl gap-5 px-6 py-2 rounded-3xl flex justify-center items-center shadow-md transition-transform duration-300"
+          >
+            See Live
+            <LuArrowUpRight />
+          </Link>
+        </div>
       </div>
       <div className="mt-16 lg:w-5/6 mx-auto relative z-20">
         <Image src={project.image} width={1200} height={700} alt={project.title} className="mx-auto rounded-lg mb-10" />
@@ -73,7 +83,7 @@ const ProjectDetails = ({ params }) => {
           </div>
         </div>
 
-        <div className="lg:flex justify-between">
+        <div className="lg:flex justify-between items-center">
           <div className="mt-16">
             <h2 className="font-semibold text-2xl mb-5">Technologies Used</h2>
             <div className="flex flex-wrap items-center gap-5">
