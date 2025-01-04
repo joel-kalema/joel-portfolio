@@ -34,7 +34,7 @@ export const FlippingText = ({ children }) => {
                         className="inline-block"
                         key={i}
                     >
-                        {l === " " ? "\u00A0" : l} {/* Use non-breaking space for better handling */}
+                        {l === " " ? "\u00A0" : l}
                     </motion.span>
                 ))}
             </div>
@@ -57,7 +57,7 @@ export const FlippingText = ({ children }) => {
                         className="inline-block"
                         key={i}
                     >
-                        {l === " " ? "\u00A0" : l} {/* Use non-breaking space for better handling */}
+                        {l === " " ? "\u00A0" : l}
                     </motion.span>
                 ))}
             </div>

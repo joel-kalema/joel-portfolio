@@ -45,7 +45,6 @@ textarea {
   color: white;
   color: transparent;
   -webkit-text-stroke: 2px #FFFFE3;
-  /* Border color and size */
 }
 
 
@@ -87,7 +86,6 @@ textarea {
 }
 .slider:hover .item{
   animation-play-state: paused!important;
-  /* filter: grayscale(1); */
 }
 .slider .item:hover{
   filter: grayscale(0);
