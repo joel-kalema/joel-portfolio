@@ -1,4 +1,4 @@
-This is a Portfolio.
+This is my Portfolio.
 
 ## Getting Started
 
