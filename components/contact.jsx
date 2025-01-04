@@ -166,7 +166,7 @@ const Contact = () => {
                             ></textarea>
                             <br />
                             <button
-                                className="mt-5 text-5xl flex items-center gap-5 float-right mb-10"
+                                className="mt-5 text-4xl flex items-center gap-5 float-right mb-10"
                                 type="submit"
                                 onClick={handleLoading}
                             >
