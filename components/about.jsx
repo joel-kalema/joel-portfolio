@@ -27,7 +27,7 @@ const About = () => {
                     <div className="lg:w-2/6">
                         <Parallax speed={-15}>
                             <p className="text-[#FFFFE3] text-xl lg:text-md">
-                                I am Joel Kalema, a Software Developer with 3+ years of remote experience, focused on building user-centered solutions and solving complex challenges effectively. Passionate about creating impactful digital experiences.
+                                I am Joel Kalema, a Software Developer with 4+ years of remote experience, focused on building user-centered solutions and solving complex challenges effectively. Passionate about creating impactful digital experiences.
                             </p>
                             <Link to='contact' className="mt-10 border flex items-center justify-between w-3/6 py-3 px-6 rounded-3xl cursor-pointer" offset={100} duration={1000}>
                                 Hire me
