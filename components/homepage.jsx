@@ -3,6 +3,7 @@
 import React from 'react'
 import Image from 'next/image';
 import { Link } from "next-scroll";
+import { LuMoveRight } from "react-icons/lu";
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 
 const HomePage = () => {
@@ -24,7 +25,9 @@ const HomePage = () => {
                     </div>
                     <div className='lg:flex justify-between items-center'>
                         <p className='lg:w-2/6 mb-4 lg:mb-0 text-[#8f8f8f]'>Let&apos;s make somthing new, different and more meanigful or make think more visual or Conceptual?</p>
-                        <Link to='contact' className='text-[#8f8f8f] border py-2 px-6 rounded-3xl cursor-pointer w-1/2 lg:w-1/6' offset={100} duration={1000}>Get in Touch!</Link>
+                        <Link to='contact' className='bg-[#FFFFE3] hover:bg-[#10100e00] hover:text-[#FFFFE3] text-[#10100e] transition duration-300 border py-2 px-6 rounded-3xl flex justify-between items-center cursor-pointer w-1/2 lg:w-1/6' offset={100} duration={1000}>
+                            Get in Touch! <LuMoveRight />
+                        </Link>
                     </div>
                 </div>
             </div>

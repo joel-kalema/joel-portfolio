@@ -61,7 +61,7 @@ const Projects = () => {
                             </p>
                             <p
                                 onClick={() => handleRedirect(project)}
-                                className="border flex items-center justify-between py-1 px-4 rounded-3xl w-3/6 lg:w-1/6 cursor-pointer"
+                                className="border bg-[#FFFFE3] hover:bg-[#10100e00] hover:text-[#FFFFE3] text-[#10100e] transition duration-300 flex items-center justify-between py-1 px-4 rounded-3xl w-2/5 lg:w-1/5 cursor-pointer"
                             >
                                 More <LuMoveRight />
                             </p>
