@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import { Link } from "next-scroll";
 import React, { useState } from "react";
 import { CiMail } from "react-icons/ci";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
