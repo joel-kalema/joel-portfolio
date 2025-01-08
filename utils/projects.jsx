@@ -61,7 +61,7 @@ export const projects = [
             "Designed a scalable donation system with Stripe."
         ],
         technologies: ['Next.js', 'MongoDB', 'Stripe', 'Tailwind'],
-        live: 'https://christopherbeleke.vercel.app/',
+        live: 'https://christopherbeleke.com/',
         state: 'private',
         outcome: "Successfully launched the platform, enhancing audience interaction and engagement."
     },
