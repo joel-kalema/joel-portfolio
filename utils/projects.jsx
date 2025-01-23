@@ -17,7 +17,7 @@ export const projects = [
             "Optimized website loading speeds and implemented responsive design principles."
         ],
         technologies: ['Next.js', 'Firebase', 'Tailwind'],
-        live: 'https://qavahgroup.com/',
+        live: 'https://qavahjk.vercel.app/',
         state: 'private',
         outcome: "Successfully delivered the project within the deadline, achieving a fully functional and user-friendly platform."
     },
